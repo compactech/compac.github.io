@@ -1,0 +1,689 @@
+.centered-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 19vh;
+  /* width: 100vw; */
+  background-color: #38a3a5;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #006666;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button:hover a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 40px);
+  }
+}
+
+/* cant find a certain product */
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+
+/* testing */
+/* .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+}
+
+/* ----------------newcard-------------- */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+
+  width: 350px;
+  height: 300px;
+  /* background-color: green; */
+  position: relative;
+  margin: 12px;
+  overflow: hidden;
+  border-color: #312b2b;
+  border-radius: 10px;
+}
+
+.card img {
+  align-self: center;
+  width: 70%;
+  height: 180px;
+  object-fit: scale-down;
+}
+
+
+.read-more {
+  display: block;
+  margin-top: -8px;
+
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-mor {
+  display: block;
+  margin-top: -34px;
+
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .card-content h3,
+.card:hover .card-content .readmore {
+  color: rgb(248, 238, 238);
+  transform: translateY(20px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ---------------- */
+
+
+.btn-grad {
+  position: absolute;
+  /* add this to position the button absolutely */
+  top: 1px;
+  /* adjust this value to position the button vertically */
+  right: 5px;
+  /* adjust this value to position the button horizontally */
+  /* background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%); */
+  margin: 10px;
+  padding: 9px 15px;
+  font-size: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.btn {
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.portfolio .container .section-title p {
+  color: #080808;
+  font-size: 14px;
+  margin-bottom: 0;
+  /* margin-left: 20%; */
+  align-items: center;
+  text-align: center;
+  /* background-color: #4e4376; */
+  width: 100%;
+}
+
+
+
+
+.img {
+  margin-left: 0%;
+}
+
+.header {
+  z-index: 997;
+  position: sticky;
+  background-color: white;
+  color: #059652;
+  padding: 20px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.header .logo img {
+  max-height: 108px;
+  margin-right: 60px;
+}
+
+.header .logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2f8f67;
+  margin-bottom: 0;
+  font-family: var(--font-primary);
+}
+
+.header .logo h1 span {
+  color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+          # Desktop Navigation
+          --------------------------------------------------------------*/
+@media (min-width: 1280px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+  }
+
+  .navbar li {
+    position: relative;
+  }
+
+  .navbar>ul>li {
+    white-space: nowrap;
+    padding: 10px 0 10px 28px;
+
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3px;
+    font-family: var(--font-primary);
+    font-size: 21px;
+    font-weight: 500;
+    color: rgb(9, 9, 9);
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .navbar a i,
+  .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+
+
+  .navbar>ul>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--color-primary);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+
+  .navbar a:hover:before,
+  .navbar li:hover>a:before,
+  .navbar .active:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>a {
+    color: #2f8f67;
+    ;
+
+  }
+
+  .navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 28px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+  }
+
+  .navbar .dropdown ul li {
+    min-width: 200px;
+  }
+
+  .navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    color: var(--color-default);
+    font-weight: 400;
+  }
+
+  .navbar .dropdown ul a i {
+    font-size: 12px;
+  }
+
+  .navbar .dropdown ul a:hover,
+  .navbar .dropdown ul .active:hover,
+  .navbar .dropdown ul li:hover>a {
+    color: var(--color-primary);
+  }
+
+  .navbar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+
+  .navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+  }
+
+  .navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .mobile-nav-show,
+  .mobile-nav-hide {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------
+          # Mobile Navigation
+          --------------------------------------------------------------*/
+@media (max-width: 1279px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 400px;
+    bottom: 0;
+    transition: 0.3s;
+    z-index: 9997;
+  }
+
+  .navbar ul {
+    position: absolute;
+    inset: 0;
+    padding: 50px 0 10px 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9998;
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: var(--font-primary);
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+
+  .navbar a i,
+  .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>a {
+    color: #fff;
+  }
+
+  .navbar .dropdown ul,
+  .navbar .dropdown .dropdown ul {
+    position: static;
+    display: none;
+    padding: 10px 0;
+    margin: 10px 20px;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #222428;
+  }
+
+  .navbar .dropdown>.dropdown-active,
+  .navbar .dropdown .dropdown>.dropdown-active {
+    display: block;
+  }
+
+  .mobile-nav-show {
+    position: relative;
+    color: black;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    z-index: 9999;
+    padding-right: 10px;
+  }
+
+  .mobile-nav-hide {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+  }
+
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+
+  .mobile-nav-active .navbar {
+    right: 0;
+  }
+
+  .mobile-nav-active .navbar:before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9996;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+main {
+
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.img {
+  margin-left: 0%;
+}
+
+.header {
+  z-index: 997;
+  position: sticky;
+  background-color: white;
+  color: #059652;
+  padding: 20px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.header .logo img {
+  max-height: 108px;
+  margin-right: 6px;
+}
+
+.header .logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2f8f67;
+  margin-bottom: 0;
+  font-family: var(--font-primary);
+}
+
+.header .logo h1 span {
+  color: var(--color-primary);
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  /* This controls the length of the underline */
+  border-bottom: 2px solid #95d5b2;
+  /* Adjust the color and thickness as needed */
+}
+.edit-container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.edit-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.edit-card {
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  width: 100%;
+  position: relative; /* Added position relative for scroll positioning */
+}
+
+.edit-card-title {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #333;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.edit-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.edit-card-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 50px;
+  border: 2px solid #ddd;
+}
+
+.edit-card-details {
+  list-style: circle inside; /* Ensures the bullets are inside the padding area */
+  margin: 0;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  padding-right: 20px; /* Added padding to ensure space for scrollbar */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: thin; /* Firefox */
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-card-details::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of the scrollbar */
+}
+
+.edit-card-details::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+}
+
+.edit-card-details li {
+  margin-bottom: 8px;
+  padding-left: 20px; /* Ensures padding for bullets */
+  text-transform: capitalize;
+  word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+  overflow-wrap: break-word; /* Allows long words to break and wrap to the next line */
+  text-align: left; /* Aligns text to the left for better readability */
+  list-style-position: inside; /* Ensures wrapped text does not go under the bullet */
+}
+
+@media (max-width: 768px) {
+  .edit-card-wrapper {
+    max-width: 100%;
+  }
+
+  .edit-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edit-card-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .edit-card-image {
+    margin-bottom: 20px;
+  }
+}

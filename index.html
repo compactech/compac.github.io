@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Compac</title>
+    <meta content name="description">
+    <meta content name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/my.css">
+  </head>
+<style>
+ .carousel-item .info {
+opacity: 0;
+position: absolute;
+top: 0; /* Change 'bottom' to 'top' /
+left: 0;
+right: 0;
+transform: translateY(-100%); / Change 'translateY(100%)' to 'translateY(-100%)' */
+transition: opacity 0.5s ease, transform 2s ease;
+}
+
+.carousel-item.active .info {
+opacity: 1;
+transform: translateY(0);
+}
+
+.carousel-item.active .info h2 {
+animation: floatText 2.5s ease forwards;
+}
+
+@keyframes floatText {
+0% {
+transform: translateY(-100%); /* Change 'translateY(100%)' to 'translateY(-100%)' */
+}
+100% {
+transform: translateY(0);
+}
+}
+
+
+.carousel-item.active .info .btn-get-started {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideUp 2s ease forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+</style>
+  <body>
+    <div id="navbarContainer"></div>
+
+  <section id="hero" class="hero">
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel"
+      data-bs-interval="5000">
+
+      <div class="carousel-item active"
+        style="background-image:url(assets/img/hero-carousel/hero-carousel-1.jpg)">
+        <div class="info d-flex align-items-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 text-center">
+                <h2>BEST TECHNICAL
+                  INNOVATIVE INDUSTRIAL <span>SOLUTIONS</span></h2>
+                <!-- <p data-aos="fade-up">Best technically innovatiove industrial solution.</p> -->
+                <a  href="#get-started"
+                  class="btn-get-started">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item"
+        style="background-image:url(assets/img/hero-carousel/slide12.jpg)">
+        <div class="info d-flex align-items-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 text-center">
+                <h2 data-aos="zoom-in" data-aos-duration="3000">TECHNICAL SERVICES<span></span></h2>
+                <!-- <p data-aos="fade-up">Best technically innovatiove industrial solution.</p> -->
+                <a data-aos="fade-up" data-aos-delay="200" href="#get-started"
+                  class="btn-get-started">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image:
+        url(assets/img/hero-carousel/slide2.jpg)">
+       <div class="info d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2 data-aos="fade-up" data-aos-duration="3000">ELECTRONIC LAB EQUIPMENT <span>SOLUTIONS</span></h2>
+              <!-- <p data-aos="fade-up">Best technically innovatiove industrial solution.</p> -->
+              <a data-aos="fade-up" data-aos-delay="200" href="#get-started"
+                class="btn-get-started">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+      </div>
+     
+ 
+      <a class="carousel-control-prev" href="#hero-carousel" role="button"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left"
+          aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right"
+          aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section>
+
+  <main id="main">
+
+ 
+    <section id="clients">
+      <div class="container">
+  
+  
+        <div class="section-header">
+          <br>
+    <br>
+          <h2>OUR BRANDS</h2>
+  
+          <br>
+          <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide"><img src="assets/img/clients/asian.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/ansel.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/aquence.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/ChemTrend.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/Cumi 3D logo.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/DIVYOL.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/MAK Logo.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/surtec.jpg" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/loctite.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/itw.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/klueber.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/lubeco.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/mixtron.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/oks.jpg" class="img-fluid" alt=""></div>
+            </div>
+  
+          </div>
+  
+        </div>
+    </section>
+  
+
+    <!-- ======= Constructions Section ======= -->
+    <section id="constructions" class="constructions">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>PRODUCTS</h2>
+          <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam
+            porro nihil id ratione ea sunt quis dolorem
+            dolore earum</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image:
+                      url(assets/img/constructions-1.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">INDUSTRIAL PRODUCTS</h4>
+                    <p>Fuga in dolorum et iste et culpa. Commodi possimus
+                      nesciunt modi voluptatem placeat deleniti
+                      adipisci. Cum delectus doloribus non veritatis.
+                      Officia temporibus illo magnam. Dolor eos et.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image:
+                      url(assets/img/constructions-2.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">TRAINING EQUIPMENT</h4>
+                    <p>Sunt deserunt maiores voluptatem autem est rerum
+                      perferendis rerum blanditiis. Est laboriosam qui
+                      iste numquam laboriosam voluptatem architecto. Est
+                      laudantium sunt at quas aut hic. Eum
+                      dignissimos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Constructions Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>Voluptatem quibusdam ut ullam perferendis repellat non ut
+            consequuntur est eveniet deleniti fignissimos eos
+            quam</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>PRE APPLIED COATING</h3>
+              <p>Provident nihil minus qui consequatur non omnis maiores.
+                Eos accusantium minus dolores iure perferendis
+                tempore et consequatur.</p>
+              <a href="service-details.html" class="readmore
+                  stretched-link">See more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"
+            data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+              </div>
+              <h3>SPECIAL COATING AND INDUSTRY FLOURING</h3>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto
+                sint. Libero corrupti neque eum hic non ut
+                nesciunt dolorem.</p>
+              <a href="service-details.html" class="readmore
+                  stretched-link">See more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"
+            data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <h3>COOLENT & LUBRICATION  MANAGEMENT</h3>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
+                Minus ea aut. Vel qui id voluptas adipisci
+                eos earum corrupti.</p>
+              <a href="service-details.html" class="readmore
+                  stretched-link">See more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+         <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"
+            data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-helmet-safety"></i>
+              </div>
+              <h3>PALNT SURVEY</h3>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut
+                aut ipsam corporis aut. Sed animi at autem
+                alias eius labore.</p>
+              <a href="service-details.html" class="readmore
+                  stretched-link">See more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"
+          data-aos-delay="400">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fa-solid fa-trowel-bricks"></i>
+            </div>
+            <h3>CORROSION MANAGEMENT SOLUTION</h3>
+            <p>Non et temporibus minus omnis sed dolor esse consequatur.
+              Cupiditate sed error ea fuga sit provident
+              adipisci neque.</p>
+            <a href="service-details.html" class="readmore
+                stretched-link">See more <i
+                class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"
+            data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+              </div>
+              <h3>COST OPTIMISATIONS</h3>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut
+                neque non et debitis iure. Corrupti
+                recusandae ducimus enim.</p>
+              <a href="service-details.html" class="readmore
+                  stretched-link">See more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <section id="feature" class="feature">
+      <div class="container">
+        <div class=" section-header">
+          <h2>INDUSTRIES WE DEAL WITH</h2>
+          <br>
+          <p>In commodi voluptatem excepturi quaerat nihil error autem
+            voluptate ut et officia consequuntu</p>
+          <br>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="300"
+          style="text-transform: uppercase; align-items: center;">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/AUTO ANCILLARIES.png" alt="">
+
+              <h3><a href="">auto ancillaries</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/AGRI EQUIPMENT.png" alt="">
+
+              <h3><a href="">agri equipment</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/AUTOMOTIVE.png" alt="">
+
+              <h3><a href="">automotive</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/BEVERAGE.png" alt="">
+
+              <h3><a href="">beverage</a></h3>
+            </div>
+          </div>
+         
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/CEMENT.png" alt="">
+              <i class="ri-gradienter-line" class="icn" style="color: #ffa76e;"></i>
+              <h3><a href="">cement</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/CHEMICALS.png" alt="">
+              <h3><a href="">chemicals</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/CYCLE.png" alt="">
+              <h3><a href="">cycle</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/ELECTRIC VEHICLE.png" alt="">
+
+              <h3><a href="">electric vehicle</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/FOOD.png" alt="">
+
+              <h3><a href="">food</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/FMCG.png" alt="">
+
+              <h3><a href="">fmcg</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/MACHINE TOOL.png" alt="">
+
+              <h3><a href="">machine tool</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/PLASTICS.png" alt="">
+
+              <h3><a href="">plastics</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/PHARMACEUTICAL.png" alt="">
+
+              <h3><a href="">PHARMACEUTICAL</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/PAPER.png" alt="">
+
+              <h3><a href="">paper</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/PACKAGING.png" alt="">
+
+              <h3><a href="">packaging</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/POWER PLANTS.png" alt="">
+
+              <h3><a href="">power plants</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/PAINT.png" alt="">
+
+              <h3><a href="">paint</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/RUBBER.png" alt="">
+
+              <h3><a href="">Rubber</a></h3>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/ROPEWAYS.png" alt="">
+
+              <h3><a href="">ropeways</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/REFINERIES.png" alt="">
+
+              <h3><a href="">refineries</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/RAILWAYS.png" alt="">
+
+              <h3><a href="">railways</a></h3>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/STEEL.png" alt="">
+
+              <h3><a href="">steel</a></h3>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/TYRE.png" alt="">
+
+              <h3><a href="">tyres</a></h3>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="assets/img/clients/INDUSTRIES WE DEAL WITH/TEXTILE.png" alt="">
+
+              <h3><a href="">textile</a></h3>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-header">
+            <h2>Testimonials</h2>
+            <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi
+              llum nostrum enim velit qui ut et autem uia
+              reprehenderit sunt deleniti</p>
+          </div>
+
+          <div class="slides-2 swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="assets/img/testimonials/testimonials-1.jpg"
+                      class="testimonial-img" alt>
+                    <h3>Saul Goodman</h3>
+                    <h4>Ceo &amp; Founder</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi
+                          bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi
+                          bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Proin iaculis purus consequat sem cure digni ssim
+                      donec porttitora entum suscipit rhoncus.
+                      Accusantium quam, ultricies eget id, aliquam eget nibh
+                      et. Maecen aliquam, risus at semper.
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="assets/img/testimonials/testimonials-2.jpg"
+                      class="testimonial-img" alt>
+                    <h3>Sara Wilsson</h3>
+                    <h4>Designer</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi
+                          bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi
+                          bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Export tempor illum tamen malis malis eram quae irure
+                      esse labore quem cillum quid cillum eram malis
+                      quorum velit fore eram velit sunt aliqua noster fugiat
+                      irure amet legam anim culpa.
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="assets/img/testimonials/testimonials-3.jpg"
+                      class="testimonial-img" alt>
+                    <h3>Jena Karlis</h3>
+                    <h4>Store Owner</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi
+                          bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi
+                          bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Enim nisi quem export duis labore cillum quae magna
+                      enim sint quorum nulla quem veniam duis minim
+                      tempor labore quem eram duis noster aute amet eram
+                      fore quis sint minim.
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="assets/img/testimonials/testimonials-4.jpg"
+                      class="testimonial-img" alt>
+                    <h3>Matt Brandon</h3>
+                    <h4>Freelancer</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi
+                          bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi
+                          bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Fugiat enim eram quae cillum dolore dolor amet nulla
+                      culpa multos export minim fugiat minim velit
+                      minim dolor enim duis veniam ipsum anim magna sunt
+                      elit fore quem dolore labore illum veniam.
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="assets/img/testimonials/testimonials-5.jpg"
+                      class="testimonial-img" alt>
+                    <h3>John Larson</h3>
+                    <h4>Entrepreneur</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi
+                          bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi
+                          bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Quis quorum aliqua sint quem legam fore sunt eram
+                      irure aliqua veniam tempor noster veniam enim
+                      culpa labore duis sunt culpa nulla illum cillum fugiat
+                      legam esse veniam culpa fore nisi cillum
+                      quid.
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </section><!-- End Testimonials Section -->
+
+    
+
+    </main><!-- End #main -->
+
+    <footer id="footer" class="footer " >
+
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-3 col-md-6 d-flex">
+            <i class="bi bi-geo-alt icon"></i>
+            <div>
+              <h4>Address</h4>
+              <p>
+                LUDHIANA | MOHALI | JAMMU
+                <br>
+                <br>
+              </p>
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+            <i class="bi bi-telephone icon"></i>
+            <div>
+              <h4>Contact us </h4>
+              <p>
+                <strong>Phone:</strong> 9216288066 <br>
+                <strong>Email:</strong> sales.chd@compactech.co.in<br>
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+            <i class="bi bi-clock icon"></i>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>
+                <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+                Sunday: Closed
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Follow Us</h4>
+            <div class="social-links d-flex">
+  
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+  
+  
+    </footer>
+
+    <a href="#" class="scroll-top d-flex align-items-center
+        justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="navbar.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </body>
+
+</html>
